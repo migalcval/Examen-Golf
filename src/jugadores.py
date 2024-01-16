@@ -105,7 +105,7 @@ def jugador_menor_handicap_por_federacion(jugadores:List[Jugador]) -> Dict[str, 
 
     for clave, valor in d.items():
         ordenado = sorted(valor, key=lambda x:x[1])[:1]
-        dicc[clave].append(ordenado)
+        dicc[clave] = ordenado
 
     return dicc
 
